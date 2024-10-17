@@ -80,9 +80,18 @@ sudo docker --version
 ```
 
 8. Build Your Docker Application
-Assuming you have your application and Dockerfile in a directory, navigate to that directory:
+To build your Docker application using a cloned repository, follow these steps:
+
+Clone the Repository: First, clone the repository from GitHub
+
 ```bash
-cd /path/to/your/application
+git clone https://github.com/abhiii71/chess-game.git
+```
+
+Navigate to the Project Directory: Once the repository is cloned, navigate to the project directory.
+
+```bash
+cd chess-game
 ```
 Build your Docker image. Replace your_image_name with your desired image name.
 
@@ -93,10 +102,6 @@ sudo docker build -t your_image_name .
 Directly pull this image from DockerHub:
 ```bash
  docker pull helloabhii/chess
-```
-Then run the container from image:
-```bash
-docker run -d -p 8080:8080  helloabhii/chess:latest 
 ```
 
 9. Run Your Docker Container
