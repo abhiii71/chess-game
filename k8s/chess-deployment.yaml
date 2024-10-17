@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chess-game-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: chess-game
+    spec:
+      containers:
+        - name: chess-game
+          image: helloabhii/chess:latest
+          ports:
+            - containerPort: 8080
