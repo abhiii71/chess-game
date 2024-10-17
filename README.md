@@ -79,6 +79,15 @@ Check that Docker is installed correctly:
 sudo docker --version
 ```
 
+### OR
+Create Inventory File: Create an inventory file (inventory.ini) to define the Azure VM:
+
+Run the Playbook: Use the following command to run the Ansible playbook:
+```bash
+ansible-playbook -i inventory.ini install_docker.yml
+```
+
+
 8. Build Your Docker Application
 To build your Docker application using a cloned repository, follow these steps:
 
